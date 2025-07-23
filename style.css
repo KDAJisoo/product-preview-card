@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  width: 100%;
+  padding: 0;
+  background-color: #f2ebe3ff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  width: 600px;
+  height: 450px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* .cover-image {
+  width: 300px;
+} */
+img {
+  width: 300px;
+}
+.content {
+  padding: 32px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sub-heading {
+  font-family: "Montserrat";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #6c7289ff;
+  letter-spacing: 10px;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.heading {
+  font-family: "Fraunces";
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d1f22ff;
+}
+.description {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #6c7289ff;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.discount {
+  font-family: "Fraunces";
+  font-size: 32px;
+  color: #3c8067ff;
+}
+.fix-price {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #6c7289ff;
+  text-decoration: line-through;
+}
+.btn {
+  font-family: "Montserrat";
+  font-weight: 500;
+  width: 100%;
+  padding: 16px;
+  background-color: #3c8067ff;
+  color: white;
+  border: 0px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .cover-image {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .content {
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+  html {
+    padding: 80px 12px;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+}
